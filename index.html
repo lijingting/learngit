@@ -1,0 +1,1136 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ntalker_互动记录</title>
+<link rel="stylesheet" media="screen" href="http://192.168.30.250/hd/application/static/message/css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://192.168.30.250/hd/application/static/WdatePicker/css/datepicker.css" />
+<link href="http://192.168.30.250/hd/application/static/WdatePicker/css/WdatePicker.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" type="text/css" href="http://192.168.30.250/hd/application/static/message/css/flexigrid/flexigrid.css">-->
+<!--<script type="text/javascript" src="http://192.168.30.250/hd/application/static/kpi/js/jquery.js"></script>-->
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/ntgrid/js/jquery.js"></script>
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/WdatePicker/js/datepicker.js" charset="gbk"></script>
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/WdatePicker/js/WdatePicker.js"></script>
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/WdatePicker/js/inputDate.js"></script>
+<!--<script type="text/javascript" src="http://192.168.30.250/hd/application/static/message/js/flexigrid.js"></script>-->
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/message/js/action.js"></script>
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/message/js//tc.min.js"></script>
+
+<!--[if IE]><script type="text/javascript" src="http://192.168.30.250/hd/application/static/360player/js/excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/360player/js/berniecode-animator.js"></script>
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/360player/js/soundmanager.js"></script>
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/360player/js/360player.js"></script>
+<link rel="stylesheet" type="text/css" href="http://192.168.30.250/hd/application/static/360player/css/360player.css" />
+
+<link rel="stylesheet" type="text/css" href="http://192.168.30.250/hd/application/static/ntgrid/css/ngrid.css" />
+<script type="text/javascript" src="http://192.168.30.250/hd/application/static/ntgrid/js/ngrid.js"></script>
+</head>
+<body><script>
+        var is_changed=false;
+        var jsROOTPATH="http://192.168.30.250/hd";
+        var jsurlct="total_scene_data";
+		var mfangfa="singleshow";
+        var src_url="http://192.168.30.250/hd";
+        var dq_time="2016/07/25";
+        var jsuserid="kf_3004_ISME9754_T2D_ntalker_maliqun";
+        var jstoken="8641f97978c79fd22ec3840f6545d62c";
+        var jssiteid="kf_3004";
+        var dquserid="kf_3004_ISME9754_T2D_ntalker_maliqun";
+        var jsactiontype="";
+        var base_url=src_url+'/index.php?c=message';
+        var groups_9954='{"37579":[{"id":"37580","name":"\u552e\u524d1\u7ec4","siteid":"kf_3004","rank":"2","pid":"37579","level":"1","enabled":"1"}],"37580":[{"id":"37581","name":"\u552e\u524d2\u7ec4","siteid":"kf_3004","rank":"2","pid":"37580","level":"1","enabled":"1"}],"37581":[{"id":"37582","name":"\u552e\u524d3\u7ec4","siteid":"kf_3004","rank":"2","pid":"37581","level":"1","enabled":"1"}],"37582":[{"id":"37583","name":"\u552e\u524d4\u7ec4","siteid":"kf_3004","rank":"2","pid":"37582","level":"1","enabled":"1"},{"id":"37584","name":"\u552e\u524d5\u7ec4","siteid":"kf_3004","rank":"1","pid":"37582","level":"1","enabled":"1"}],"37499":[{"id":"37591","name":"\u552e\u540e\uff08Customer service \uff09","siteid":"kf_3004","rank":"1","pid":"37499","level":"1","enabled":"1"}],"37591":[{"id":"37592","name":"\u54a8\u8be2\u6295\u8bc9","siteid":"kf_3004","rank":"1","pid":"37591","level":"1","enabled":"1"}]}';
+        var summarys_9954='{"37499":[{"id":"113905","siteid":"kf_3004","summarytype":"\u7acb\u5373\u751f\u6548","lastmodify":"1463737522","groupid":"37499","rank":"1","enabled":"1"},{"id":"113912","siteid":"kf_3004","summarytype":"wxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","lastmodify":"1463991753","groupid":"37499","rank":"2","enabled":"1"}],"37581":[{"id":"114068","siteid":"kf_3004","summarytype":"\u552e\u524d1\u7ec4\u5185\u7684","lastmodify":"1467352903","groupid":"37581","rank":"1","enabled":"1"}],"37591":[{"id":"114091","siteid":"kf_3004","summarytype":"\u9000\u8d27","lastmodify":"1467796188","groupid":"37591","rank":"1","enabled":"1"}],"37593":[{"id":"114092","siteid":"kf_3004","summarytype":"\u4f18\u60e0\u5238\u89c4\u5219\uff08Coupon rule\uff09","lastmodify":"1467798388","groupid":"37593","rank":"1","enabled":"1"},{"id":"114093","siteid":"kf_3004","summarytype":"\u67e5\u8be2\u8ba2\u5355\u72b6\u6001\uff08Query order status\uff09","lastmodify":"1467798406","groupid":"37593","rank":"2","enabled":"1"},{"id":"114094","siteid":"kf_3004","summarytype":"\u5982\u4f55\u8d2d\u4e70\uff08How to buy\uff09","lastmodify":"1467798418","groupid":"37593","rank":"3","enabled":"1"}],"37594":[{"id":"114095","siteid":"kf_3004","summarytype":"\u5546\u54c1\u7b7e\u6536\u4fe1\u606f\u5f02\u5e38\uff08Commodity receipt information abnormal\uff09","lastmodify":"1467798443","groupid":"37594","rank":"1","enabled":"1"},{"id":"114096","siteid":"kf_3004","summarytype":"\u7269\u6d41\u9014\u4e2d\u6162\/\u505c\u6ede\uff08Logistics on the way slow \/ stagnant\uff09","lastmodify":"1467798454","groupid":"37594","rank":"2","enabled":"1"},{"id":"114097","siteid":"kf_3004","summarytype":"\u7269\u6d41\u4e22\u4ef6\uff08Logistics lost parts\uff09","lastmodify":"1467798465","groupid":"37594","rank":"3","enabled":"1"}]}';
+        //保存当前页数
+        var curPage = 1;
+        var d_curPage = 1;
+		var vid = 0;
+        var d_totalPage = 2;
+        var totalPage = 2;
+        var normal_type='successful_scene';
+        var normal_current_type='total_scene_data';
+        var normal_period='';
+        var normal_begin="2016/07/15";
+        var normal_end="2016/07/15";
+        var downKey="6f0ea54be97748b12e98d9dae8e64c6a";
+        var if_platform="0";
+        var role="admin";
+		var total_num="14";
+        </script>
+<!--begin公用头部-->
+<!--begin公用头部-->
+<div class="page_top">
+                <li style="padding:0 8px 0 0;">
+                <input name="textfield" type="text" class="input input150 input_data" id="inputDate" value="2016/07/15-2016/07/15">
+                <input type="hidden" value="2016/07/25" id="headaddstattime">
+                <input type="hidden" value="2016/07/25" id="headtoday">
+            </li>
+            
+            <li><a href="javascript:void(0);"   s_type="date" id='month' onclick="normalDate('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','','',this.id)" enddate="2016/07/25" begindate="2016/06/25">近一月</a></li>	
+            <li><a href="javascript:void(0);"  s_type="date" id='week' onclick="normalDate('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','','',this.id)" enddate="2016/07/25" begindate="2016/07/19">近一周</a></li>
+            <li><a href="javascript:void(0);"  s_type="date" id='three' onclick="normalDate('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','','',this.id)" enddate="2016/07/25" begindate="2016/07/23">近三天</a></li>
+            <li><a href="javascript:void(0);"  s_type="date" id='yestoday' onclick="normalDate('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','','',this.id)" enddate="2016/07/24" begindate="2016/07/24">昨天</a></li>
+            <li><a href="javascript:void(0);"  s_type="date" id='today' onclick="normalDate('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','','',this.id)" enddate="2016/07/25" begindate="2016/07/25">今天</a></li>
+              <li  class="l1 "><input name="textfield2" maxlength="60" type="text" class="selectedMenuSeach" id="keyword_r" value="用户名/ID、咨询详情关键词" onfocus="if(this.value=='用户名/ID、咨询详情关键词'){this.value='';}" onblur="if(this.value==''){this.value='用户名/ID、咨询详情关键词';}"></li>
+     <li class="l2 "><div class="btnSeach f_r dishand" onclick="query_submmit_9954('find');">查找</div></li>
+     <li class="l1"><span class="f_blue2"><a href="http://192.168.30.250/hd/index.php?c=message&m=singleshow&actiontype=searchshow&begindate=2016/07/15&enddate=2016/07/15&userid=kf_3004_ISME9754_T2D_ntalker_maliqun&token=8641f97978c79fd22ec3840f6545d62c">高级搜索>></a></span></a></li>
+</div>
+<!--左侧menu-->
+<div class="s_left_cont">
+    <div class="nav02 xlxg"><a href="http://192.168.30.250/hd/index.php?c=message&m=counts&actiontype=counts&userid=kf_3004_ISME9754_T2D_ntalker_maliqun&token=8641f97978c79fd22ec3840f6545d62c" class="leftNav" >整体统计</a></div>
+    <div class="nav02 sele"><a href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','total_scene_data')" class="leftNav">有效咨询（14）</a>
+        <div class="icon01 icon_posi yxzx_imgbs " onclick="dhlzd('yxzx_dis','yxzx_imgbs')"></div>
+    </div>
+    <ul class="s_left_m yxzx_dis blocks">
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','buy_scene_data')">已购买咨询(2)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','notbuy_scene_data')">未购买咨询(12)</a></li>
+              <div class="dian"></div>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','summary_scene_data')">已总结咨询(0)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','notsummary_scene_data')">未总结咨询(14)</a></li>
+              <div class="dian"></div>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','product_scene_data')">商品环节咨询(0)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','cart_scene_data')">购物车咨询(0)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','order_scene_data')">订单页咨询(0)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','pay_scene_data')">支付页咨询(0)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','successful_scene','other_scene_data')">其他环节咨询(14)</a></li>
+            </ul>
+
+    <div class="nav02 xlxg">
+        <a href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','failed_scene','total_scene_data')" class="leftNav">无效咨询（1827）</a>
+		<div class="icon11 icon_posi wxzx_imgbs " onclick="dhlzd('wxzx_dis','wxzx_imgbs')"></div>
+    </div>
+	<ul class="s_left_m wxzx_dis nones">
+		              <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','failed_scene','visitors_no_response')">访客无应答(6)</a></li>
+                      <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','failed_scene','kf_no_response')">客服无应答(1821)</a></li>
+            </ul>
+    <div class="nav02 xlxg">
+        <a onclick="dhlzd('qbly_dis','qbly_imgbs')" class="leftNav">全部留言（0）</a>
+        <div class="icon11 icon_posi qbly_imgbs" onclick="dhlzd('qbly_dis','qbly_imgbs')"></div>
+    </div>
+    <ul class="s_left_m qbly_dis nones">
+        <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','treated_leavemsg','total_msg_data')">已处理（<span id="treated_leavemsg_num">0</span>）</a></li>
+        <li style=""><a class="" href="javascript:void(0)" onclick="change_current_type('kf_3004_ISME9754_T2D_ntalker_maliqun','8641f97978c79fd22ec3840f6545d62c','untreated_leavemsg','total_msg_data')">未处理（<span id="untreated_leavemsg_num">0</span>）</a></li>
+    </ul>
+		<div class="nav02 xlxg">
+		<a onclick="dhlzd('dhjl_dis','dhjl_imgbs')" class="leftNav">电话记录</a>
+		<div class="icon11 icon_posi dhjl_imgbs" onclick="dhlzd('dhjl_dis','dhjl_imgbs')"></div>
+	</div>
+	<ul class="s_left_m dhjl_dis nones">
+		<li style="">
+			<a class="" href="javascript:void(0)" onclick="call_record_url('call_on')">呼入接听记录</a>
+		</li>
+		<li style="">
+			<a class="" href="javascript:void(0)" onclick="call_record_url('exhale_on')">呼出接听记录</a>
+		</li>
+		<li style="">
+			<a class="" href="javascript:void(0)" onclick="call_record_url('call_not')">呼入未接记录</a>
+		</li>
+		<li style="">
+			<a class="" href="javascript:void(0)" onclick="call_record_url('exhale_not')">呼出未接记录</a>
+		</li>
+	</ul>
+		<div class="nav02 xlxg">
+        <a href="http://192.168.30.250/hd/index.php?c=message&m=singleshow&t=colleague&userid=kf_3004_ISME9754_T2D_ntalker_maliqun&token=8641f97978c79fd22ec3840f6545d62c&begindate=2016/07/15&enddate=2016/07/15" class="leftNav">同事会话记录</a>
+    </div>
+    <div class="nav02 xlxg">
+        <a href="http://192.168.30.250/hd/index.php?c=message&m=singleshow&actiontype=downloadexcel&userid=kf_3004_ISME9754_T2D_ntalker_maliqun&token=8641f97978c79fd22ec3840f6545d62c&begindate=2016/07/15&enddate=2016/07/15" class="leftNav">导出管理</a>
+    </div>
+    <div class="nav02 xlxg">
+        <!--<a href="" class="leftNav" >常用搜索（<span id="cyssnum">0</span>）</a>-->
+        <a onclick="dhlzd('cyss_dis','cyss_imgbs')" class="leftNav" >常用搜索（<span id="cyssnum">0</span>）</a>
+        <div class="icon11 icon_posi cyss_imgbs" onclick="dhlzd('cyss_dis','cyss_imgbs')"></div>
+    </div>
+    <ul class="s_left_m cyss_dis nones" id="oftensearch">
+            </ul>
+</div>
+
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+	/*
+	 * 排序
+	 */
+	$('#ngrid').ngrid({
+		height: 'auto',
+		width: 'auto',
+		//striped: false,//交替行颜色
+		showBorder: false,//是否显示行的横向边框
+		singleSelect:true,//行是否可以多选
+		//sortDirection:["EmployeeID", "LastName", "FirstName"],
+		// sortDirection:[],//值为不为空的数组时，数组里的每一列可支持排序
+		// sortname : "iso",//onChangeSort 排序函数参数：排序的名字
+		// sortorder : "asc",//onChangeSort 排序函数参数：排序的方向
+		showBoder: true,
+		showToggleBtn:false,  //是否允许显示隐藏列
+		//当排序改变时执行的函数
+		//onChangeSort: function(sortname,sortorder){
+			//alert(sortname+ ','+sortorder)
+		//},
+		//列位置拖动后触发的函数
+		onDragCol:function(start,end){
+			var obj = $('#ttt th');
+			var objData = new Array();
+			$.each(obj,function(i,s){
+				var bs = $(s).attr('bs');
+				if(bs){
+					objData.push(bs);
+				}
+			});
+			var t = 'successful_scene';
+			var ct = 'total_scene_data';
+			if(t == 'successful_scene' && ct == 'total_scene_data'){
+				var htmltype = 1;//有效咨询
+			}else if(t == 'successful_scene' && ct == 'buy_scene_data'){
+				var htmltype = 1;//已购买咨询
+			}else if(t == 'successful_scene' && ct == 'notbuy_scene_data'){
+				var htmltype = 1;//未购买咨询
+			}else if(t == 'successful_scene' && ct == 'summary_scene_data'){
+				var htmltype = 1;//已总结咨询
+			}else if(t == 'successful_scene' && ct == 'notsummary_scene_data'){
+				var htmltype = 1;//未总结咨询
+			}else if(t == 'successful_scene' && ct == 'product_scene_data'){
+				var htmltype = 1;//商品环节咨询
+			}else if(t == 'successful_scene' && ct == 'cart_scene_data'){
+				var htmltype = 1;//购物车咨询
+			}else if(t == 'successful_scene' && ct == 'order_scene_data'){
+				var htmltype = 1;//订单页咨询
+			}else if(t == 'successful_scene' && ct == 'pay_scene_data'){
+				var htmltype = 1;//支付页咨询
+			}else if(t == 'successful_scene' && ct == 'other_scene_data'){
+				var htmltype = 1;//其他环节咨询
+			}else if(t == 'failed_scene' && ct == 'total_scene_data'){
+				var htmltype = 2;//无效咨询
+			}else if(t == 'failed_scene' && ct == 'visitors_no_response'){
+				var htmltype = 2;//访客无应答
+			}else if(t == 'failed_scene' && ct == 'kf_no_response'){
+				var htmltype = 2;//客服无应答
+			}
+			var ngridData = objData.join();
+			var tmp_url = "index.php/message/ngrid?userid=" + 'kf_3004_ISME9754_T2D_ntalker_maliqun' + "&token=" + '8641f97978c79fd22ec3840f6545d62c' + "&s=" + Math.random();
+			$.ajax({
+				type:'post',
+				url:tmp_url,
+				async:false,
+				data:{'content':ngridData,'htmltype':htmltype},
+				success:function(data){
+					console.log(data);
+				},
+				dataType:'text'
+			}); 
+		}
+	});
+});
+$(function(){
+	/*
+	 * 设置当前DIV列表滚动条坐标
+	 */
+	var oParent = document.getElementById('ngrid_position');
+	// console.log(0+','+0);
+	oParent.scrollLeft = 0;
+	oParent.scrollTop = 0;
+});
+</script>
+
+
+<div class="djxsyc">
+    <script>
+        //初始化计算 选择显示内容 宽度
+            var cnt = 0;
+            $(document).ready(function() {  
+                    $("#ttt td").each(function(){              
+                        if($(this).css('display')!=='none'){
+                             cnt += parseInt($(this).attr("width"));
+                        }
+                    });  
+                    $(".table_s").attr('width',cnt);
+            });
+    </script>
+		<div class="div_list_150" onclick="showLayer()" id="xzxsnr">选择显示内容：</div>
+	   <div id="div_list_150_list" autohide="yes">
+		   <ul>
+				<li onclick="show_duihao(this)" class="spbs_2"><span class="f_whit"> √ </span>结束时间</li>
+								<li onclick="show_duihao(this)" class="spbs_4"><span class="f_whit"> √ </span>用户ID</li>
+				<li onclick="show_duihao(this)" class="spbs_5"><span class="f_whit"> √ </span>接待客服</li>
+				<li onclick="show_duihao(this)" class="spbs_6"><span class="f_whit"> √ </span>客服组</li>
+				<li onclick="show_duihao(this)" class="spbs_7"><span class="f_whit"> √ </span>会话持续时长</li>
+				<li onclick="show_duihao(this)" class="spbs_9"><span class="f_whit"> √ </span>咨询结果</li>
+				<li onclick="show_duihao(this)" class="spbs_11"><span class="f_whit"> √ </span>用户身份</li>
+				<li onclick="show_duihao(this)" class="spbs_14"><span class="f_whit"> √ </span>咨询发起页url</li>
+				<li onclick="show_duihao(this)" class="spbs_15"><span class="f_whit"> √ </span>咨询发起人</li>
+				<li onclick="show_duihao(this)" class="spbs_16"><span class="f_whit"> √ </span>咨询结束人</li>
+				<li onclick="show_duihao(this)" class="spbs_18"><span class="f_whit"> √ </span>质检评分</li>
+				<li onclick="show_duihao(this)" class="spbs_19"><span class="f_whit"> √ </span>咨询质量</li>
+				<li onclick="show_duihao(this)" class="spbs_21"><span class="f_whit"> √ </span>客户地域</li>
+				<li onclick="show_duihao(this)" class="spbs_22 yinchang"><span class="f_whit"> √ </span>国外地域</li>
+				<li onclick="show_duihao(this)" class="spbs_24"><span class="f_whit"> √ </span>客户终端</li>
+				<li onclick="show_duihao(this)" class="spbs_26"><span class="f_whit"> √ </span>搜索关键词</li>
+				<li onclick="show_duihao(this)" class="spbs_27"><span class="f_whit"> √ </span>咨询总结备注</li>
+				<li onclick="show_duihao(this)" class="spbs_28 yinchang"><span class="f_whit"> √ </span>处理结果</li>
+				<li onclick="show_duihao(this)" class="spbs_29"><span class="f_whit"> √ </span>客户建议</li>
+				<li onclick="show_duihao(this)" class="spbs_30"><span class="f_whit"> √ </span>是否解决问题</li>
+								<li onclick="show_duihao(this)" class="spbs_53"><span class="f_whit"> √ </span>客服消息条数</li>
+				<li onclick="show_duihao(this)" class="spbs_54"><span class="f_whit"> √ </span>访客消息条数</li>
+				<li onclick="show_duihao(this)" class="spbs_56"><span class="f_whit"> √ </span>会话总时长</li>
+				<li onclick="show_duihao(this)" class="spbs_59"><span class="f_whit"> √ </span>首次响应时长</li>
+				<li onclick="show_duihao(this)" class="spbs_60"><span class="f_whit"> √ </span>会话销毁时间</li>
+				<li onclick="show_duihao(this)" class="spbs_61"><span class="f_whit"> √ </span>最后发言者类型</li>
+				<li onclick="show_duihao(this)" class="spbs_64"><span class="f_whit"> √ </span>接待组ID</li>
+		   </ul>
+		   </div>
+	
+<!--右侧 头部-->
+<div class="s_righ_top" style="height:67px;">
+<input name="button" type="submit" class="but but_80" id="btn_search" value="导出全部"  onclick="excel_download()" />
+<div style="margin:30px 80px 0 170px;">
+       <div class="icon_f5 f_l" onclick="download_sx()"></div>刷新
+   </div>
+</div>
+
+<!--右侧start-->
+<div class="s_righ_cont" style="top:106px;overflow-y: hidden;" id="html_xy">
+    <div style=" width:99%;height:380px;;">
+  <table id="ngrid" width="4000" border="0" align="center" cellpadding="0" cellspacing="0" class="table_s" style="">
+    
+	<thead>
+        <tr class="td1" id="ttt">
+            <th bs="starttime" width="210" height="38" align="center"> <div class="f_l" style="margin-left:37%;" onclick="sort('time','ngrid_position')">开始时间</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                  <div class="icon_2" onclick="sort('time','ngrid_position')"></div>
+                  <div class="icon_3blue" onclick="sort('time','ngrid_position')"></div>
+                  <input type="hidden" name="order_icon" id="time_order_icon" class="time_up"/>
+				</div>
+            </th>
+            <th bs="enddata" width="210" height="38" align="center" style="display: none;" class="wy_spbs_2"> <div class="f_l" style="margin-left:37%;" onclick="sort('end_time','ngrid_position')">结束时间</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                  <div class="icon_2" onclick="sort('end_time','ngrid_position')"></div>
+                  <div class="icon_3blue" onclick="sort('end_time','ngrid_position')"></div>
+                  <input type="hidden" name="order_icon" id="end_time_order_icon" class="time_up"/>
+              </div>
+            </th>
+                        <th bs="vname" width="210" align="center" style="">用户名称</th>
+                            <th bs="source" width="210" align="center" style="">客户来源</th>
+                        <th bs="kfconsultingtype" width="210" align="center" style="">咨询类型</th>
+                            <th bs="buying" width="210" align="center" style="">咨询购买</th>
+                        <th bs="score" width="210" height="38" align="center" style=""> <div class="f_l" style="margin-left:37%;" onclick="sort('score','ngrid_position')">满意度</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                  <div class="icon_2" onclick="sort('score','ngrid_position')"></div>
+                  <div class="icon_3blue" onclick="sort('score','ngrid_position')"></div>
+                  <input type="hidden" name="order_icon" id="score_order_icon" class="time_up"/>
+               </div>
+            </th>
+            <th bs="num" width="210" height="38" align="center"> <div class="f_l" style="margin-left:37%;" onclick="sort('num','ngrid_position')">消息条数</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                  <div class="icon_2" onclick="sort('num','ngrid_position')"></div>
+                  <div class="icon_3blue" onclick="sort('num','ngrid_position')"></div>
+                  <input type="hidden" name="order_icon" id="num_order_icon" class="time_up"/>
+              </div>
+            </th>
+            <th bs="vid" width="210" align="center" style="display: none;" class="wy_spbs_4">用户ID</th>
+            <th bs="jiedaikefu_names" width="210" align="center" style="display: none;" class="wy_spbs_5">接待客服</th>
+            <th bs='groupname' width="210" align="center" style="display: none;" class="wy_spbs_6">客服组</th>
+            <th bs="msgtimedif" width="210" align="center" style="display: none;" class="wy_spbs_7"><div class="f_l" style="margin-left:37%;" onclick="sort('msgtimedif','ngrid_position')">会话持续时长</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                <div class="icon_2" onclick="sort('msgtimedif','ngrid_position')"></div>
+                <div class="icon_3blue" onclick="sort('msgtimedif','ngrid_position')"></div>
+                <input type="hidden" name="order_icon" id="msgtimedif_order_icon" class="time_up"/>
+            </th>
+            <th bs="success" width="210" align="center" style="display: none;" class="wy_spbs_9">咨询结果</th>
+            <th bs="userlevel" width="210" align="center" style="display: none;" class="wy_spbs_11">用户身份</th>
+            <th bs="url" width="210" align="center" style="display: none;" class="wy_spbs_14">咨询发起页url</th>
+            <th bs="initiator" width="210" align="center" style="display: none;" class="wy_spbs_15">咨询发起人</th>
+            <th bs="endtalkman" width="210" align="center" style="display: none;" class="wy_spbs_16">咨询结束人</th>
+            <th bs="inspecttotal" width="210" align="center" style="display: none;" class="wy_spbs_18"><div class="f_l" style="margin-left:37%;" onclick="sort('inspect','ngrid_position')">质检评分</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                <div class="icon_2" onclick="sort('inspect','ngrid_position')"></div>
+                <div class="icon_3blue" onclick="sort('inspect','ngrid_position')"></div>
+                <input type="hidden" name="order_icon" id="inspect_order_icon" class="time_up"/>
+            </th>
+            <th bs="consultingqality" width="210" align="center" style="display: none;" class="wy_spbs_19"><div class="f_l" style="margin-left:37%;" onclick="sort('inspect','ngrid_position')">咨询质量</div>
+                <div class="div_icon_ud" style="float:left; margin-top: 10px;width:20px;">
+                <div class="icon_2" onclick="sort('inspect','ngrid_position')"></div>
+                <div class="icon_3blue" onclick="sort('inspect','ngrid_position')"></div>
+                <input type="hidden" name="order_icon" id="consultingqality_order_icon" class="time_up"/>
+            </th>
+            <th bs="city" width="210" align="center" style="display: none;" class="wy_spbs_21">客户地域</th>
+            <th width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">国外地域</th>
+            <th bs="entrance" width="210" align="center" style="display: none;" class="wy_spbs_24">客户终端</th>
+            <th bs="keyword" width="210" align="center" style="display: none;" class="wy_spbs_26">搜索关键词</th>
+            <th bs="kfremark" width="210" align="center" style="display: none;" class="wy_spbs_27">咨询总结备注</th>
+            <th width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</th>
+            <th bs="vremark"width="210" align="center" style="display: none;" class="wy_spbs_29">客户建议</th>
+            <th bs="score_jiejuelv"width="210" align="center" style="display: none;" class="wy_spbs_30">是否解决问题</th>
+						
+			<th bs="kfmsgnum" width="210" align="center" style="display: none;" class="wy_spbs_53">客服消息条数</th>
+			<th bs="vmsgnum" width="210" align="center" style="display: none;" class="wy_spbs_54">访客消息条数</th>
+			<th bs="sesstimedif" width="210" align="center" style="display: none;" class="wy_spbs_56">会话总时长</th>
+			<th bs="firstresptime" width="210" align="center" style="display: none;" class="wy_spbs_59">首次响应时长</th>
+			<th bs="endtime" width="210" align="center" style="display: none;" class="wy_spbs_60">会话销毁时间</th>
+			<th bs="endtalkman_s" width="210" align="center" style="display: none;" class="wy_spbs_61">最后发言者类型</th>
+			<th bs="contact" width="210" align="center" style="display: none;" class="wy_spbs_64">接待组ID</th>
+            <th width="166" align="center">操作</th>
+        </tr>
+	</thead>
+		
+	<tbody>
+                <tr nex_id="kf_3004_ISME9754_1468547408864" prev_id="" onclick="showMsg('kf_3004_ISME9754_1468575460792','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468575460792">
+            <td height="28" align="center">2016-07-15 17:37:40</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 17:38:03</td>
+            			<td width="210" align="center" style=""><a text_val="客人6872" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468575460792">客人6872</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468575460792"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">未评价</td>
+            <td width="210" align="center" style="">3</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guest9609EC89-657F-65</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">李志霞客服(lizhixia_kf)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">CRM</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">23″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468575460792">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人6872</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">李志霞客服(lizhixia_kf)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468575460792"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468575460792"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468575460792"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">46′59″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">23″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 18:24:40</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1467628240342</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_0">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468571645116" prev_id="kf_3004_ISME9754_1468575460792" onclick="showMsg('kf_3004_ISME9754_1468547408864','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468547408864">
+            <td height="28" align="center">2016-07-15 09:50:08</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 09:55:46</td>
+            			<td width="210" align="center" style=""><a text_val="客人8990" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468547408864">客人8990</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468547408864"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">未评价</td>
+            <td width="210" align="center" style="">18</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guesta7eb515d-cf14-4c90-a8d1-171f6611627b</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">fengyu223(fengyu13)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">测试一组账号</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">5′37″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468547408864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人8990</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">客人8990</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468547408864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468547408864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468547408864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">4</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">14</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">49′43″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">1′57″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 10:39:52</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">访客</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1452075715396</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_1">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468568767652" prev_id="kf_3004_ISME9754_1468547408864" onclick="showMsg('kf_3004_ISME9754_1468571645116','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468571645116">
+            <td height="28" align="center">2016-07-15 16:34:05</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 16:34:05</td>
+            			<td width="210" align="center" style=""><a text_val="客人7799" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468571645116">客人7799</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468571645116"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">未评价</td>
+            <td width="210" align="center" style="">3</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestAD24AC45-E39F-93</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">新建机器人1(新建机器人1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">机器人组</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">0″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468571645116">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人7799</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">新建机器人1(新建机器人1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468571645116"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468571645116"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468571645116"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">12′17″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">0″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 16:46:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1464833056956</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_2">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468563666428" prev_id="kf_3004_ISME9754_1468571645116" onclick="showMsg('kf_3004_ISME9754_1468568767652','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468568767652">
+            <td height="28" align="center">2016-07-15 15:46:07</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 15:48:08</td>
+            			<td width="210" align="center" style=""><a text_val="客人2821" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468568767652">客人2821</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468568767652"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">未评价</td>
+            <td width="210" align="center" style="">8</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestTEMPC3B2-415B-D3</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">zpf2(zpf1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">zpf</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">2′0″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="file:///C:/Users/Administrator/Desktop/3004.htm" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468568767652">file:///C:/Users/Adm</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人2821</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">zpf2(zpf1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468568767652"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468568767652"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468568767652"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">6</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">2′0″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">8″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 15:48:11</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1463277997879</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_3">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468575689013" prev_id="kf_3004_ISME9754_1468568767652" onclick="showMsg('kf_3004_ISME9754_1468563666428','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468563666428">
+            <td height="28" align="center">2016-07-15 14:21:06</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 14:25:32</td>
+            			<td width="210" align="center" style=""><a text_val="客人0654" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468563666428">客人0654</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468563666428"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">未评价</td>
+            <td width="210" align="center" style="">16</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestTEMP297E-9976-C5</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">admin(admin)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">测试一组账号</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">4′26″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468563666428">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人0654</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">admin(admin)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468563666428"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468563666428"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468563666428"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">7</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">8</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">4′26″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">28″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 14:25:37</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1467255234221</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_4">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468567158885" prev_id="kf_3004_ISME9754_1468563666428" onclick="showMsg('kf_3004_ISME9754_1468575689013','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468575689013">
+            <td height="28" align="center">2016-07-15 17:41:29</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 17:47:03</td>
+            			<td width="210" align="center" style=""><a text_val="客人0654" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468575689013">客人0654</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468575689013"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">未评价</td>
+            <td width="210" align="center" style="">8</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestTEMP297E-9976-C5</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">admin(admin)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">测试一组账号</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">5′34″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468575689013">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人0654</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">admin(admin)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468575689013"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468575689013"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468575689013"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">4</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">3</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">2°19′54″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">4″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 20:01:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1467255234221</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_5">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468569295932" prev_id="kf_3004_ISME9754_1468575689013" onclick="showMsg('kf_3004_ISME9754_1468567158885','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468567158885">
+            <td height="28" align="center">2016-07-15 15:19:18</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 15:19:29</td>
+            			<td width="210" align="center" style=""><a text_val="客人8369" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468567158885">客人8369</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468567158885"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">非常满意</td>
+            <td width="210" align="center" style="">4</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestA2955288-D4A4-C9</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">lzx(lizhixia)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">CRM</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">10″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468567158885">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人8369</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">lzx(lizhixia)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468567158885"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468567158885"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468567158885"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">-</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">3°5′21″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">10″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 18:24:40</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1467628240342</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_6">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468569496838" prev_id="kf_3004_ISME9754_1468567158885" onclick="showMsg('kf_3004_ISME9754_1468569295932','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468569295932">
+            <td height="28" align="center">2016-07-15 15:54:55</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 15:55:15</td>
+            			<td width="210" align="center" style=""><a text_val="yhjufmujh" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468569295932">yhjufmujh</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468569295932"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">非常满意</td>
+            <td width="210" align="center" style="">12</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestTEMP128B-DADF-35</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">zpf2(zpf1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">zpf</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">19″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php?keypage=3&uid=&uname=&goods_id=" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468569295932">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">zpf2(zpf1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">zpf2(zpf1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468569295932"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468569295932"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468569295932"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">已解决</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">7</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">4</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">10′12″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">1″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 16:06:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">客服</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1463277997879</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_7">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468565408345" prev_id="kf_3004_ISME9754_1468569295932" onclick="showMsg('kf_3004_ISME9754_1468569496838','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468569496838">
+            <td height="28" align="center">2016-07-15 15:58:16</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 16:00:31</td>
+            			<td width="210" align="center" style=""><a text_val="客人9806" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468569496838">客人9806</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468569496838"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">非常满意</td>
+            <td width="210" align="center" style="">32</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guest81B2D952-A210-BC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">zpf2(zpf1)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">zpf</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">2′14″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468569496838">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人9806</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">客人9806</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468569496838"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468569496838"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468569496838"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">已解决</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">6</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">24</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">13′6″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">22″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 16:11:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">访客</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1463277997879</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_8">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468563764561" prev_id="kf_3004_ISME9754_1468569496838" onclick="showMsg('kf_3004_ISME9754_1468565408345','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468565408345">
+            <td height="28" align="center">2016-07-15 14:50:08</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 14:51:05</td>
+            			<td width="210" align="center" style=""><a text_val="客人3684" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468565408345">客人3684</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468565408345"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">非常满意</td>
+            <td width="210" align="center" style="">8</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guestTEMP1226-77F2-16</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">admin(admin)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">测试一组账号</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">57″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php?keypage=4&uid=&uname=&goods_id=" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468565408345">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人3684</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">客人3684</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468565408345"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468565408345"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468565408345"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">已解决</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">2</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">4</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">10′39″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">1″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 16:06:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">访客</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1466161016065</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_9">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="kf_3004_ISME9754_1468568349864" prev_id="kf_3004_ISME9754_1468565408345" onclick="showMsg('kf_3004_ISME9754_1468563764561','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468563764561">
+            <td height="28" align="center">2016-07-15 14:22:44</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 14:48:15</td>
+            			<td width="210" align="center" style=""><a text_val="客人7463" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468563764561">客人7463</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468563764561"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">非常满意</td>
+            <td width="210" align="center" style="">18</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guest45D8779C-A0D4-B7</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">gye管理员(gye管理员)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">小能技术支持（勿删）</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">25′30″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php?keypage=4&uid=&uname=&goods_id=1001" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468563764561">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人7463</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">客人7463</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang">北京</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468563764561"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468563764561"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468563764561"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">已解决</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">15</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">10′39″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">1″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 16:06:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">访客</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1466161016065</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_10">
+                </div>
+            </td>
+        </tr>
+                <tr nex_id="" prev_id="kf_3004_ISME9754_1468563764561" onclick="showMsg('kf_3004_ISME9754_1468568349864','chatscene',this)" name="tr_2" class='dishand' id="kf_3004_ISME9754_1468568349864">
+            <td height="28" align="center">2016-07-15 15:39:09</td>
+            <td height="28" align="center" style="display: none;" class="wy_spbs_2">2016-07-15 15:48:34</td>
+            			<td width="210" align="center" style=""><a text_val="客人7288" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="u_namekf_3004_ISME9754_1468568349864">客人7288</a><span></span></td>
+                            <td width="210" align="center" style="">直接输入</td>
+                        <td width="210" align="center" style="" title="     "><a text_val="     " onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxlxkf_3004_ISME9754_1468568349864"> </a><span></span></td>
+            
+                            <td width="210" align="center" style="">未购买</td>
+                        <td width="210" align="center" style="">非常满意</td>
+            <td width="210" align="center" style="">8</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_4">guest8A96B8C0-255F-D5</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_5">gye管理员(gye管理员)</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_6">小能技术支持（勿删）</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_7">9′24″</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_9">有效咨询</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_11">普通用户</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_14"><a text_val="http://release-rd1.ntalker.com:140/rd/kf_3004/index.php?keypage=5&uid=&uname=&goods_id=1001" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="zxfqykf_3004_ISME9754_1468568349864">http://release-rd1.n</a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_15">客人7288</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_16">客人7288</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_18">-</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_19">未质检</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_21"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_22 yinchang"></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_24">PC</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_26"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="keywordkf_3004_ISME9754_1468568349864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_27"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="kfremarkkf_3004_ISME9754_1468568349864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_28 yinchang">处理结果</td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_29"><a text_val="" onmouseover="wtitleshow(this.id)" onmouseout="wtitlehidden(this.id)" id="khjykf_3004_ISME9754_1468568349864"></a><span></span></td>
+            <td width="210" align="center" style="display: none;" class="wy_spbs_30">已解决</td>
+						<td width="210" align="center" style="display: none;" class="wy_spbs_53">1</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_54">5</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_56">10′39″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_59">1″</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_60">2016-07-15 16:06:23</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_61">访客</td>
+			<td width="210" align="center" style="display: none;" class="wy_spbs_64">kf_3004_1466664238679</td>
+            <td align="center">
+                <div class="icon_5 icon_edit " style="position: initial;" text_val="查看" style="left:60%;top:4px;" onmouseover="titleshow(this.id)" onmouseout="titlehidden(this.id)" id="yxzx_title_11">
+                </div>
+            </td>
+        </tr>
+           </tbody>
+</table>
+</div>                
+<!--分頁-->
+<div style="position: fixed;bottom:20px;left:230px;right: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" class="list_page">
+        <tbody>
+            <tr><td width="10%" align="center" class="f_gray4">每页显示12条</td>
+				<td width="10%" align="center" class="f_gray4">本页共12条</td>
+				<td width="10%" align="center" class="f_gray4">总计14条</td>
+                <td width="90%" align="right"><a href="javascript:void(0)" onclick="pageSelect('-1',0,'ngrid_position')">上一页</a> &nbsp;<a href="javascript:void(0)"  onclick="pageSelect('+1',0,'ngrid_position')">下一页</a>&nbsp;共2页  &nbsp;到第
+                    <input type="text" size="4" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="select" onchange="pageSelect(0,this.value,'ngrid_position')">
+                    页 &nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--分頁-->
+</div>
+<!--右侧end-->
+</div>
+</div>
+
+</div>
+<div class="msgxsyc" style="display:none" id="msgxsycid">
+    <div class="s_righ_top s_righ_top_m">
+<input type="submit" name="button" id="button1" value="" class="but_back" onclick="return_click()"/><!---->
+<input type="submit" name="button" id="url_sx_id" value="" class="but_refresh"/>
+<input type="submit" name="button" id="button3" value="" class="but_out" onclick="one_download()"/>
+<input type="hidden" name="button" id="one_sessionid" value=""/>
+<div class="f_r"><a href="#"><span id="prev_a">上一条</span></a>　<a href="#"><span id="nex_a">下一条</span></a></div>
+<!--<div class="f_r"><a href="#"><span id="prev_a">上一次</span></a>　<a href="#"><span id="nex_a">下一次</span></a></div>-->
+</div>
+<!--右侧-->
+<div class="s_righ_cont s_righ_cont_m">
+<!--中间内容-->
+<div class="s_righ_cont_c" id="chatscene_txt" >
+</div>
+<div class="clear"></div>
+</div>
+<div class="div_bot_list_left">当前客户总计有 <span id='current_total' style='color:#044273' class="f_b"></span> 次咨询 当前第 <span id='current_scene' style='color:#044273;' class="f_b"></span> 次 
+</div>
+
+<div class="div_sort f_100 div_bot_list" onclick="five_show_dis()">
+<span id="five_session_msg"></span>
+<div class="div_bot_list_cont" style="display:none;" autohide="yes">
+<ul id="five_li_html">
+</ul>
+</div>
+    
+    
+</div>
+<!--右边内容-->
+<div class="s_righ_cont_li_r ">
+<div id="tab">
+<ul class="tabul">
+<li class="l1" onclick="show_info('scene')" id="scene_info_li" style="border-left: 0;" >会话信息</li>
+<li onclick="show_info('custom')" id="custom_info_li">用户信息</li>
+<li onclick="show_info('trail')" id="trail_info_li" >用户轨迹</li>
+</ul>
+<div id="scene_info_txt" style="width:350px;overflow-y: auto; overflow-x: hidden;float:left;"></div>
+<div id="custom_info" current_guestid='' style="width:350px;height:100%;overflow-y: auto; overflow-x: hidden;float:left;"></div>
+<div id='trail_info' current_guestid='' iframesrc=''></div>
+</div>                                                                            
+</div>
+
+<!-- 咨询类型全部分类-->
+<div id="div_chatsummary" style="display:none;">
+<input type='hidden' name='chosen_type' id='chosen_type'>
+<input type='hidden' name='chosen_title' id='chosen_title'>
+<input type='hidden' name='sessionid' id='sessionid'>
+<div class="div_t tit">咨询类型全部分类 <div class="icon_close f_r close" onclick="zxlxtc_close()"></div></div>
+<div class="div_t1">
+<div class="div_list">
+	<ul>
+                                <li style="padding-left:0px;" class="">
+                        <div class="icon_tri_right f_l zxlx37499" onclick="gdxszxlx('37499')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37499')">11</span>
+                        <ul class="ul37499" style="display: none;">
+                                                              <li onclick="chooseType_9954('立即生效','113905','triple','')" onmouseover="showTitleDiv(this,'立即生效')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('立即生效',50,true))</script></li>
+                                                              <li onclick="chooseType_9954('wxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx','113912','triple','')" onmouseover="showTitleDiv(this,'wxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('wxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',50,true))</script></li>
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:15px;" class="yinchang id37499">
+                        <div class="icon_tri_right f_l zxlx37591" onclick="gdxszxlx('37591')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37591')">售后（Customer service ..</span>
+                        <ul class="ul37591" style="display: none;">
+                                                              <li onclick="chooseType_9954('退货','114091','triple','')" onmouseover="showTitleDiv(this,'退货')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('退货',50,true))</script></li>
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:30px;" class="yinchang id37591">
+                        <div class="icon_tri_right f_l zxlx37592" onclick="gdxszxlx('37592')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37592')">咨询投诉</span>
+                        <ul class="ul37592" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:0px;" class="">
+                        <div class="icon_tri_right f_l zxlx37578" onclick="gdxszxlx('37578')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37578')">22</span>
+                        <ul class="ul37578" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:0px;" class="">
+                        <div class="icon_tri_right f_l zxlx37579" onclick="gdxszxlx('37579')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37579')">售前</span>
+                        <ul class="ul37579" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:15px;" class="yinchang id37579">
+                        <div class="icon_tri_right f_l zxlx37580" onclick="gdxszxlx('37580')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37580')">售前1组</span>
+                        <ul class="ul37580" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:30px;" class="yinchang id37580">
+                        <div class="icon_tri_right f_l zxlx37581" onclick="gdxszxlx('37581')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37581')">售前2组</span>
+                        <ul class="ul37581" style="display: none;">
+                                                              <li onclick="chooseType_9954('售前1组内的','114068','triple','')" onmouseover="showTitleDiv(this,'售前1组内的')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('售前1组内的',50,true))</script></li>
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:45px;" class="yinchang id37581">
+                        <div class="icon_tri_right f_l zxlx37582" onclick="gdxszxlx('37582')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37582')">售前3组</span>
+                        <ul class="ul37582" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:60px;" class="yinchang id37582">
+                        <div class="icon_tri_right f_l zxlx37583" onclick="gdxszxlx('37583')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37583')">售前4组</span>
+                        <ul class="ul37583" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:60px;" class="yinchang id37582">
+                        <div class="icon_tri_right f_l zxlx37584" onclick="gdxszxlx('37584')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37584')">售前5组</span>
+                        <ul class="ul37584" style="display: none;">
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:0px;" class="">
+                        <div class="icon_tri_right f_l zxlx37593" onclick="gdxszxlx('37593')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37593')">客户问题（Customer proble..</span>
+                        <ul class="ul37593" style="display: none;">
+                                                              <li onclick="chooseType_9954('优惠券规则（Coupon rule）','114092','triple','')" onmouseover="showTitleDiv(this,'优惠券规则（Coupon rule）')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('优惠券规则（Coupon rule）',50,true))</script></li>
+                                                              <li onclick="chooseType_9954('查询订单状态（Query order status）','114093','triple','')" onmouseover="showTitleDiv(this,'查询订单状态（Query order status）')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('查询订单状态（Query order status）',50,true))</script></li>
+                                                              <li onclick="chooseType_9954('如何购买（How to buy）','114094','triple','')" onmouseover="showTitleDiv(this,'如何购买（How to buy）')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('如何购买（How to buy）',50,true))</script></li>
+                               
+                        </ul>
+                  </li>
+                                <li style="padding-left:0px;" class="">
+                        <div class="icon_tri_right f_l zxlx37594" onclick="gdxszxlx('37594')"></div>
+                        <span class="f_b" onclick="gdxszxlx('37594')">物流问题（Logistics probl..</span>
+                        <ul class="ul37594" style="display: none;">
+                                                              <li onclick="chooseType_9954('商品签收信息异常（Commodity receipt information abnormal）','114095','triple','')" onmouseover="showTitleDiv(this,'商品签收信息异常（Commodity receipt information abnormal）')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('商品签收信息异常（Commodity receipt information abnormal）',50,true))</script></li>
+                                                              <li onclick="chooseType_9954('物流途中慢/停滞（Logistics on the way slow / stagnant）','114096','triple','')" onmouseover="showTitleDiv(this,'物流途中慢/停滞（Logistics on the way slow / stagnant）')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('物流途中慢/停滞（Logistics on the way slow / stagnant）',50,true))</script></li>
+                                                              <li onclick="chooseType_9954('物流丢件（Logistics lost parts）','114097','triple','')" onmouseover="showTitleDiv(this,'物流丢件（Logistics lost parts）')" onmouseout="$('#div_title').css('display','none')" title=""><script>document.write(subString('物流丢件（Logistics lost parts）',50,true))</script></li>
+                               
+                        </ul>
+                  </li>
+                	  </ul>
+</div>
+</div>
+<div class="div_c">
+<p>备注：</p>
+<textarea name="textarea" id='chat_remark' cols="45" rows="5" class="input1" onfocus="if(this.value=='最多可以输入115个字符！'){this.value='';}" onblur="if(this.value==''){this.value='最多可以输入115个字符！';}" value="最多可以输入115个字符！"></textarea>
+ <div class="title f_b">已选项：</div>
+ <div class="cont">
+        <ul id="chosen_type_div">
+        </ul>
+ </div>
+</div>
+<div class="div_b"> 
+	<input name="button" type="submit" class="but_50" onclick="summary_reset();" value="重　置"  style="margin-top:10px;" />  
+        <input name="button" type="submit" class="but_50"  id='summary_button' onclick="summary_9954()" value="确　定"  style="margin-top:10px;margin-left:10px;" />
+        <span id="zjpfsbtu" style="display:none;"></span>
+</div>
+</div>
+<!--质检评分-->
+<form id='inspect_form'>
+<div class="tc_div_zjpf" id='pingfen' style='display:none;'>
+<div class="div_t tit">质检评分<div class="icon_close f_r close" onclick="$('#maskLayer').remove();$('#pingfen').css('display','none')"></div></div>
+<div class="div_c">
+<ul class="title"><li><span style="display:inline-block; width: 60%;">质检标准</span><span style="display:inline-block;">分数</span></li></ul>
+<ul>
+<li>
+	<span style="display:inline-block; width: 60%;">、dq学术 50分</span>
+	<span class="s2">
+		<input style="width:50px;" name="score_text" id="28" type="text" class="input1"  onKeyup="this.value=this.value.replace(/^[0\D]+/,'');check_score(this,50,event)" onblur="update_score(1,this)"/>
+	</span>
+</li>
+<li>
+	<span style="display:inline-block; width: 60%;">、dq话术 60分</span>
+	<span class="s2">
+		<input style="width:50px;" name="score_text" id="29" type="text" class="input1"  onKeyup="this.value=this.value.replace(/^[0\D]+/,'');check_score(this,60,event)" onblur="update_score(1,this)"/>
+	</span>
+</li>
+<li>
+	<span style="display:inline-block; width: 60%;">、TT 50分</span>
+	<span class="s2">
+		<input style="width:50px;" name="score_text" id="798" type="text" class="input1"  onKeyup="this.value=this.value.replace(/^[0\D]+/,'');check_score(this,50,event)" onblur="update_score(1,this)"/>
+	</span>
+</li>
+</ul>
+<ul class="title"><li><span>最终分数</span><span id='total_score'>0</span></li></ul>
+<input type='hidden' name='current_sid' id='current_sid' />
+</div>
+<div class="score_comment"><span>备注：</span><textarea value="最多可以输入100个字符！" onblur="if(this.value==''){this.value='最多可以输入100个字符！';}" onfocus="if(this.value=='最多可以输入100个字符！'){this.value='';}" rows="3" cols="45" id="score_comment" name="score_comment"></textarea></div>
+<div class="div_b"><input type="button" class="but_50 ma_l10" onclick="updateScore()" name="input3" value="确　定" /></div>
+</div>
+</form>
+</div>
+
+<div id="tc_div_delect">
+        <span>提示：</span><br>
+        <span style="text-indent: 12em;">是否确认删除</span>
+        <span style="margin-top: 30px;">
+        <input name="button" type="submit" class="but_50" onclick="cyss_delect()" value="是" style="margin-left:100px;"/>
+        <input name="button" type="hidden" id="delect_id" value=""/>
+        <input name="button" type="hidden" id="delect_type" value=""/>
+        <input name="button" type="submit" class="but_50" onclick="tsqxshow()" value="否" style="margin-left:100px;"/></span>
+</div>
+<div id="download_delect">
+        <span>提示：</span><br>
+        <span style="text-indent: 12em;">是否确认删除</span>
+        <span style="margin-top: 30px;">
+        <input name="button" type="submit" class="but_50" onclick="download_delect()" value="是" style="margin-left:100px;"/>
+        <input name="button" type="hidden" id="download_scid" value=""/>
+        <input name="button" type="submit" class="but_50" onclick="tsqxshow()" value="否" style="margin-left:100px;"/></span>
+</div>
+
+<div id="tc_div_pop" style="display:none;">
+<div class="icon_ok" id="bstupian"></div>
+<span></span>
+</div>
+<div id="tc_div_pop_mp3" style="display:none;">
+<div class="icon_iok" id="bstupian_mp3"></div>
+<span></span>
+</div>
+<input type="hidden" value="" id="message_msg_baoji" rukou="" nex_id="" prev_id=""/>
+<div id="newtc_div_allcont" style="display:none;">
+<div class="div_t">导出管理<div class="icon_close f_r" onclick="qxdownload()"></div></div>
+<div class="div_c">
+<div class="div_c1">任务名称：<input name="textfield3h" type="text" maxlength="9" id="download_title" value="请输入名称" onfocus="if(this.value=='请输入名称'){this.value='';}" onblur="if(this.value==''){this.value='请输入名称';}"/><span class="f_blue2 download_tsxx"></span></div> 
+<div class="div_c1">选择字段</div>
+ <ul class="cont">
+	<li><input type="checkbox" name="checkbox" id="qxcheckbox" onclick="selectAllNullorReserve('msgcheckbox','全选')"><span class="f_b">全选</span></li>
+</ul>
+ <ul id="download_li_html">
+ </ul>
+</div>
+<div class="div_b">
+<select name="excel_type" id="excel_type" class="excel_type">
+    <option value="csv">导出为csv格式</option>
+	<option value="xls">导出为xls格式</option>
+</select>
+<input name="button" type="submit" class="but_50" onclick="selectAllNullorReserve('msgcheckbox','重置')" value="重　置" style="margin-left:-130px;margin-top:10px;">
+<input name="button" type="submit" class="but_50 ma_l10" id="download_button" onclick="phpexceldownload()" value="确　认" style="margin-top:10px;">
+</div>
+</div>
+</body>
+</html>
